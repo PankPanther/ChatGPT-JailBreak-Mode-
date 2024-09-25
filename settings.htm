@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Settings</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="chat.css">
+  <meta name="viewport" content="width=device-width" />
+
+</head>
+
+<body style="background-color: white;">
+
+  <a class="btn right" onclick="window.history.back();">Back</a>
+  <a class="btn right" href="javascript:localStorage.clear();location.reload();">Reset</a>
+  <div id="app" class="container">
+    <form>
+      <recursive-settings :settings="bs.settings" @save-settings="saveSettings"></recursive-settings>
+      <button v-if="isApp" class="btn waves-effect waves-light" onclick="Android.SetDefaultAssistant()">Set Default Assistant to Android</button>
+    </form>
+    
+
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.14/vue.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="common.js"></script>
+  <script src="engineer.js"></script>
+  <script src="androidFunctions.js"></script>
+  <script src="settings.js" charset="UTF-8">   </script>
+  <script src="generateAudio11Labs.js"></script>
+  <script src="generateAudioMsEdge.js"></script>
+  <script src="settingsRenderer.js"></script>
+  <script>
+
+    let vue = new Vue({
+      el: '#app',
+      data: bs,
+      mounted() {
+        setTimeout(() => {
+          /*M.autoInit*/;
+        }, 100);
+      },
+      methods: {
+        saveSettings() {
+          saveSettings();
+        },
+      },
+    });
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pankaj JailBreak GPT</title>
+    <!-- prefetch fetch -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://gptcall.net/chat.css">
+    <link rel="icon" type="image/png" href="https://www.crushpixel.com/big-static15/preview4/white-skull-2186958.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="manifest" href="https://gptcall.net/manifest.json">
+    
+    <script src="https://gptcall.net/libs/scoped.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/3.15.1/minified.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://bimbosuper.altervista.org/materialize-dark.css"> -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WT3VZNT7E6"></script>
+    <script>window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WT3VZNT7E6');</script>
+    
+</head>
+ <style>
+body {
+  background-image: url('https://news.itsfoss.com/content/images/wordpress/2022/02/kali-linux-desktop-wallpaper.jpg');
+}
+</style> 
+<body style="background-color: white;">
+    <div id="app">
+        <navbar>
+            <li><a href="https://gptcall.net/settings.html" target="_blank">Settings</a></li>  
+            <li><a @click="chat.params.page='androidNotifications'" class="sidenav-close">Auto Responder</a></li>
+
+            <li v-if="!isMobile"><a @click="SaveAsContact">Save as contact</a></li>
+            <li>
+                <a class="waves-effect waves-light btn sidenav-close" @click="newChat(); $nextTick(() => $refs.userInput.focus());">Clear Chat</a>
+            </li>
+
+            <li>
+                <ul id="plugin-list" class="collapsible expandable">
+                    <li :class="enablePlugins?'active':''">
+                        <div>
+                            <div class="switch right">
+                                <label>
+                                    <input type="checkbox" v-model="enablePlugins">
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                            <div class="collapsible-header">
+                                <i class="material-icons">extension</i>Plugins
+                            </div>
+                        </div>
+
+                        <div class="collapsible-body">
+                            <ul>
+                                <li v-for="plugin in bs.settings.plugins" v-if="!plugin.hidden">
+
+                                    <div class="switch">
+                                        <label :for="`plugin-switch-${plugin.name}`">
+                                            <input type="checkbox" v-model="plugin._callback.enabled" :id="`plugin-switch-${plugin.name}`" @change="saveSettings()">
+                                            <span class="lever"></span>
+                                            {{ plugin.name }}
+                                        </label>
+                                    </div>
+
+                                </li>
+                                <!--
+                            <li>
+                                <a @click="addPlugin" class="waves-effect waves-light btn"><i class="material-icons left">add</i>Add Plugin</a>
+                            </li>
+                            -->
+                            </ul>
+                        </div>
+
+                    </li>
+                </ul>
+
+            </li>
+            <li class="center">PanKaj AsWal(JailBreakGPT)</li>
+
+            <li v-for="(name, key) in bs.chats" :key="key">                
+                <a style="white-space: nowrap;" @click="loadChat(key)">{{ name?.name??name }}</a>
+            </li>
+        </navbar>
+        <android-notifications v-if="isApp" v-show="params.page=='androidNotifications'"></android-notifications>
+        <div v-show="params.page!='androidNotifications' && params.page!='assistant-commands'" class="chat">
+            <style scoped src="chat.css"></style>
+            <div id="permissionModal" class="modal">
+                <div class="modal-content">
+                    <h4>Microphone Permission</h4>
+                    <p>Please accept microphone permission to enable voice chat</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+                </div>
+            </div>
+
+
+
+            <div>
+                <div id="chat-container" class="container" style="min-height: calc(100vh - 100px); margin-bottom: 0px;">
+                    <form @submit.prevent="sendMessageFromInput" style="display: flex;">
+
+                        <div class="" style="flex-grow: 1;">
+                            <textarea ref="userInput" v-model="data.userInput" id="user-input" class="materialize-textarea" style="min-height:20px;margin: 0; resize: vertical; width: 100%;" placeholder="Type your message..." @keydown.enter="handleEnter"></textarea>
+                        </div>
+                        <div style="position: relative; display: flex; height: 100%;" v-if="data.userInput.length==0">
+                            <div class="col s4">
+                                <input type="file" id="file-upload" style="display: none;" accept="*/*" @change="uploadImage">
+                                <a class="waves-effect waves-light" @click="triggerFileUpload" style="height: 100%; display: flex; align-items: center;">
+                                    <i class="material-icons" style="font-size: 30px;" v-if="!isIosApp">attach_file</i>
+                                </a>
+                            </div>
+                            <div class="col s6" style="margin: 5px; display: flex; align-items: center; justify-content: center;">
+                                <button type="button" class="btn waves-effect waves-light" id="mic-button" v-if="!isIosApp" @click="toggleMic">
+                                    <i :class="{'material-icons': !micTime, 'white-text text-accent-4': !recognitionStarted, 'red-text': recognitionStarted && !micTime}">{{ micTime? vueRefresh() || Math.ceil(Math.max(1, 3+((micTime-Date.now() ) / 1000))) : recognitionStarted ? 'mic' : 'mic_off' }}</i>
+                                </button>
+                            </div>
+                            <div class="col s6" style="margin: 5px;display: flex; align-items: center; justify-content: center;">
+                                <button type="button" class="btn waves-effect waves-light" @click="stopReceiving(true)">
+                                    <i class="material-icons">stop_circle</i>
+                                </button>
+                            </div>
+                        </div>
+                        <button v-else type="submit" class="btn waves-effect waves-light">Send</button>
+                    </form>
+                    <div style="overflow-x: auto; display: flex;" class="col">
+                        <div class="chip" v-for="chip in data.chips" @click="onChipClick(chip)">
+                            <span :style="chip.style" class="chip-s tooltip" :title="chip.tooltip || chip.name" data-position="top">{{chip.name}}</span>
+
+
+                            <i class="material-icons">{{chip.icon}}</i>
+                        </div>
+                    </div>
+
+
+                    <div id="chat-log" class="col s12" style="display: grid;">
+                        <assistant-commands v-if="isApp && renderMessages.length==0 && !isIos"></assistant-commands>
+                        
+                        <div v-if="bs.settings.debug" style="position: absolute; top: 50vh;left: 50%; transform: translate(-50%, -50%);">
+                            <a class="chip  blue fade-away" @click="pasteFromClipboard">Paste from Clipboard</a>
+                        </div>
+                        
+                       
+
+                        <div v-for="(message, index) in data.renderMessages" :key="index" class="message-card" :class="message.role === 'user' ? 'user-message' : 'assistant-message'" v-if="!message._hidden || bs.settings.debug">
+                            <div :class="{ collapsed: message.role =='system' || message.role =='function' || message.function_call|| message._title  }" onclick="this.classList.remove('collapsed')">
+                                <img v-if="message.role === 'assistant' && !message.function_call" class="message-icon" :src="getThumbnailUrl(bs.contact)" alt="Contact Photo" style="border-radius: 50%; width: 50px; height: 50px;">
+                                <i v-else class="material-icons message-icon">{{ message.template?.icon?message.template?.icon: message.role === 'assistant' ? 'account_circle' : message.role === 'user' ? 'person' : 'info' }}</i>
+                                <span class="right">
+                                    <a class="dropdown-trigger" :data-target="`dropdown-${index}`">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul :id="`dropdown-${index}`" class="dropdown-content">
+                                        <li><a @click="copyMessage(message)">Copy</a></li>
+                                        <li><a @click="editMessage(message)">Edit</a></li>
+                                        <li><a @click="deleteMessage(message)">Delete</a></li>
+                                        <li><a @click="readMessage(message)">Read</a></li>
+                                        <li><a @click="regenerateMessage(message)">{{ message.role === 'assistant' ? 'Continue' : 'Resend' }}</a></li>
+                                    </ul>
+                                </span>
+                                <textarea v-if="message._isEditing" tabindex="0" v-html="message.content" ref="editableSpan" @blur="saveEdit(message)" style="height: 200px;"></textarea>
+                                <span v-else>
+                                    <span v-if="message._title" class="word-wrap" v-text="message._title"></span>
+                                    <button v-if="message.function_call" @click="EvalFunction(message)" class="btn waves-effect waves-light">Execute</button>
+                                    <span v-if="message.error" style="color: red; font-weight: bold;">{{ message.error }}</span>
+                                    <img v-if="message._image" :src="message._image" class="message-image" style="max-width: 70vw;">
+                                    <code class="word-wrap2 rendered-markdown" style="vertical-align: bottom;" v-html="marked(message.content?.[0]?.text??message.content??'')"></code>
+                                    <span class="message-name">{{ message.name || message.function_call?.name }}{{message.function_call?.arguments}}</span>
+
+                                    <div v-if="message._actions?.length>0" class="message-actions">
+                                        <button v-for="(action,index) in message._actions" @click="OpenLink(index,message)" class="btn waves-effect waves-light">{{ action.fileName == 'index.html' ? 'Preview' : action.fileName }}</button>
+                                        <a :href="tmrace + '/' + message._actions[0].filePathUrl?.replace(message._actions[0].fileName, 'install.html')" class="btn waves-effect waves-light">Open</a>
+                                    </div>
+                                </span>
+                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="libs/vue.js"></script>
+    <script src="common.js"></script>
+    <script src="engineer.js"></script>
+    <script src="androidFunctions.js"></script>
+    <script src="speechDetection.js"></script>
+    <script src="apigpt.js"></script>
+    <script src="apigptHF.js"></script>
+    <script src="similarity.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.9/purify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked-highlight@2.1.1/lib/index.umd.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.5.1/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.5/mermaid.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.13.5/mermaid.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+    <script>
+
+    </script>
+
+    <script src="settings.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="plugins.js"></script>
+    <script src="errors.js"></script>
+    <script src="generateAudio.js"></script>
+    <script src="generateAudioSpechify.js"></script>
+    <script src="generateAudio11Labs.js"></script>
+    <script src="generateAudio11LabsWebSockets.js"></script>
+    <script src="generateAudioMsEdge.js"></script>
+    <script src="components/createHtmlCodeModal.js"></script>
+    <script src="speechWhisperWrapper.js"></script>
+    <script src="speechWhisper.js"></script>
+    <script src="huggingFaceBlip.js"></script>
+    <script src="hive.js"></script>
+    <script src="components/androidNotifications.js"></script>
+    <script src="components/androidChat.js"></script>
+    <script src="android.js"></script>
+    <script src="components/gettingStarted.js"></script>
+    <script src="chat.js"></script>
+    <script src="settingsRenderer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
+    
+    
+    
+
+</body>
+</noscript>
+<div style="text-align: center;"><div style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999">
+
+</div></div>
+<script defer src="https://gptcall.net/libs/onnxjs/ort.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/@ricky0123/vad-web@0.0.12/dist/bundle.min.js"></script>
+<script defer src="https://mmig.github.io/libflac.js/dist/libflac.wasm.js"></script>
+
+
+</html>

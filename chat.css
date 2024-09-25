@@ -1,0 +1,153 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: unset !important;
+}
+
+.modal-overlay{
+  pointer-events: none;
+}
+
+#chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.word-wrap {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.full-screen-modal {
+  max-height: 100%;
+  width: 100%;
+  top: 0 !important;
+  height: 100%;
+}
+.full-screen-modal .modal-content {
+  height: calc(100% - 56px);
+  overflow-y: auto;
+}
+
+.message-card {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  overflow: auto;
+  @media2 (prefers-color-scheme: dark) {
+    background-color: #333;
+  }
+}
+
+.user-message {
+  background-color: #aee0ff;
+  @media2 (prefers-color-scheme: dark) {
+    background-color: #2572ac;
+  }
+}
+
+.assistant-message {
+  background-color: #e7e7e7;
+  @media2 (prefers-color-scheme: dark) {
+    background-color: #424242;
+  }
+}
+
+.message-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+
+
+.chip {
+  display: inline-flex;
+  flex-wrap: nowrap;
+
+}
+
+.chip-s {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100px;
+  text-overflow: ellipsis;
+}
+
+.chip {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.truncate {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  /* Set your desired maximum width here */
+}
+
+.blue {
+  background-color: blue;
+}
+
+.chip.fade-away {
+  animation: 5s fadeAndHide 2s forwards;
+}
+
+@keyframes fadeAndHide {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.input-field label{
+ 
+  pointer-events: none;
+
+}
+
+    /* CSS for smaller headers */
+    .rendered-markdown h1 {
+      font-size: 24px;
+  }
+  .rendered-markdown h2 {
+      font-size: 20px;
+  }
+  .rendered-markdown h3 {
+      font-size: 18px;
+  }
+
+  /* CSS to limit image size */
+  .rendered-markdown img {
+      max-width: 512px;
+      height: auto;
+  }
+  .collapsed {
+    display: block;
+    max-height:30px;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent);
+    mask-image: linear-gradient(to bottom, black 50%, transparent);
+}
+
+
+
