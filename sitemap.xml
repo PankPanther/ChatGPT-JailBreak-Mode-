@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/activity</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/issues</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/pulls</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/actions</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/security</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/README.md</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/android.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/androidFunctions.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/apigpt.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/apigptHF.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/chat.css</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/chat.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/common.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/engineer.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/errors.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/errorsForward.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/flow.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/generateAudio.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/generateAudio11Labs.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/generateAudio11LabsWebSockets.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/generateAudioMsEdge.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/generateAudioSpechify.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/hive.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/huggingFaceBlip.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/index.css</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/index.html</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/index.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/manifest.json</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/moreContacts.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/plugins.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/settings.htm</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/settings.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/settingsRenderer.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/similarity.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/speechDetection.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/speechWhisper.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/speechWhisperWrapper.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/blob/main/tavern.js</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/releases</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels?sort=name-asc</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels?sort=name-desc</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels?sort=count-desc</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels?sort=count-asc</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels/bug</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels/documentation</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels/duplicate</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels/enhancement</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels/good%20first%20issue</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels/help%20wanted</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels/invalid</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels/question</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/labels/wontfix</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?state=open</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?state=closed</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=desc&amp;sort=due_date&amp;state=open</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=asc&amp;sort=due_date&amp;state=open</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=asc&amp;sort=completeness&amp;state=open</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=desc&amp;sort=completeness&amp;state=open</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=asc&amp;sort=title&amp;state=open</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=desc&amp;sort=title&amp;state=open</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=desc&amp;sort=count&amp;state=open</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=asc&amp;sort=count&amp;state=open</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=desc&amp;sort=due_date&amp;state=closed</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=asc&amp;sort=due_date&amp;state=closed</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=asc&amp;sort=completeness&amp;state=closed</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=desc&amp;sort=completeness&amp;state=closed</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=asc&amp;sort=title&amp;state=closed</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=desc&amp;sort=title&amp;state=closed</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=desc&amp;sort=count&amp;state=closed</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://github.com/PankPanther/ChatGPT-JailBreak-Mode-/milestones?direction=asc&amp;sort=count&amp;state=closed</loc>
+  <lastmod>2024-10-17T06:22:35+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>
